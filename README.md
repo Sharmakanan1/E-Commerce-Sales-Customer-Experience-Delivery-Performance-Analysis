@@ -118,24 +118,24 @@ Create:
 
 or, depending on your chosen business definition:
 
-**Order Value = price + freight_value**
+>Order Value = price + freight_value
 ##### Delivery Days:
-**Delivery Days = Delivered Date - Purchase Date**
+>Delivery Days = Delivered Date - Purchase Date
 
 ##### Expected Delivery Difference:
 
-**Delivery Variance = Actual Delivery Date - Estimated Delivery Date**
+>Delivery Variance = Actual Delivery Date - Estimated Delivery Date
 
 ##### Late Delivery:
 
-**IF Delivery Variance > 0**
-**THEN "Late"**
-**ELSE "On Time"**
+>IF Delivery Variance > 0
+>THEN "Late"
+>ELSE "On Time"
 
 ##### Customer Type
 
-**1 order → One-time Customer**
-**>1 order → Repeat Customer** 
+>1 order → One-time Customer
+>>1 order → Repeat Customer
 
 ## Q — Three Major Cleaning Decisions
 #### Decision 1 — Date conversion:
