@@ -8,11 +8,11 @@ E-commerce data analysis using the Olist dataset. Includes data cleaning, prepro
 # 2. Source and URL
 
 Source: Kaggle — Olist
-Olist Brazilian E-Commerce Dataset
-The dataset was provided by Olist and contains anonymized real commercial e-commerce data.
+- Olist Brazilian E-Commerce Dataset
+- The dataset was provided by Olist and contains anonymized real commercial e-commerce data.
 
 # 3. Number of rows and columns
-The dataset consists of multiple related CSV files, rather than one single table.
+- The dataset consists of multiple related CSV files, rather than one single table.
 Dataset	Approx. rows
 Orders	99,441
 Customers	99,441
@@ -31,7 +31,7 @@ This multi-table structure is particularly useful for demonstrating data joining
 - I selected this dataset because it contains a large volume of real-world commercial data and multiple related tables. It allows analysis across sales, customers, products, payments, delivery performance and customer satisfaction. The dataset is sufficiently complex to demonstrate data cleaning, joining, feature engineering, exploratory analysis and business-oriented visualization.
 
 # 6. Business opportunities/problems
-The dataset can help investigate:
+- The dataset can help investigate:
 Sales and revenue trends
 Product/category performance
 Customer purchasing behavior
@@ -42,3 +42,4 @@ Payment behavior
 Seller performance
 Repeat-customer behavior
 Opportunities to improve customer experience
+
