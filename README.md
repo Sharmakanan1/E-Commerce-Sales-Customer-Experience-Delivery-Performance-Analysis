@@ -169,7 +169,7 @@ Revenue is concentrated among a relatively small number of product categories.
 #### Evidence:
 
 Calculate:
-**Revenue by Category**
+>**Revenue by Category**
  `Revenue by Category=Category Revenue / Total Revenue × 100`
 
 **Why management should care:**
@@ -190,7 +190,43 @@ Existing analysis of the dataset confirms strong customer/seller concentration i
 
 #### Evidence:
 Create:
-`Revenue by State
+>`Revenue by State
 Orders by State
 Customers by State`
 
+**Business impact:**
+The company may have opportunities to expand into underpenetrated regions.
+
+**Recommendation:**
+Identify high-potential states with lower current sales and test targeted marketing or seller acquisition strategies.
+
+### Insight 3 — Delivery affects customer satisfaction
+This can be your strongest insight.
+
+#### Insight:
+Customers receiving late deliveries tend to provide substantially lower review scores.
+Existing analysis reports approximately:
+| Delivery Status | Average Review Score |
+|-----------------|----------------------|
+| On Time         | ~4.29                |
+| Late            | ~2.57                |
+| Not Delivered   | ~1.76                |
+
+**Business impact:**
+Delivery delays can directly damage customer experience.
+
+**Recommendation:**
+Prioritize logistics monitoring for orders at high risk of delay and investigate sellers/carriers with consistently poor delivery performance.
+### Insight 4 — Sales trend
+
+Analyze monthly:
+
+`Month
+Orders
+Revenue
+Average Order Value`
+
+One existing analysis of this dataset identifies November 2017 as the strongest month by revenue, at approximately 1.18M total revenue under its revenue definition.
+
+**Recommendation:**
+Use historical seasonal patterns to plan inventory, seller capacity and marketing campaigns.
