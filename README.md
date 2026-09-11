@@ -380,10 +380,6 @@ I'd make the dashboard look something like this:
 │              │              │ Value        │ Score        │
 └──────────────┴──────────────┴──────────────┴──────────────┘
 ```
-## Q7 — Management Recommendations
-
-**📈 1. Monthly Revenue Trend**
-## 📊 Q8 — Analysis Graphs
 
 ### 1. Monthly Revenue Trend
 
@@ -434,3 +430,20 @@ pie title Payment Method Distribution
     "Debit Card" : 3
     "Voucher" : 2
 ```
+## Q9 — Slide Presentation
+
+## Q10 — How I Used AI
+The assessment specifically allows AI and asks you to document how you used it.
+
+You can write:
+#### AI Tools used:
+>ChatGPT
+
+#### What I used AI for:
+>I used AI to brainstorm suitable business problems, understand unfamiliar dataset structures, develop and debug Python code, suggest analytical approaches, improve documentation and identify appropriate visualization techniques.
+
+#### Example where AI helped:
+>AI helped me design the initial data-processing workflow and suggested calculated fields such as delivery duration and delivery-status classification.
+
+#### Example where I verified/corrected AI:
+>AI-generated analytical suggestions were independently checked against the dataset. Where calculations or assumptions did not match the actual data structure, I modified the code and methodology before using the result.
