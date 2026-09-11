@@ -168,18 +168,15 @@ Revenue is concentrated among a relatively small number of product categories.
 
 #### Evidence:
 
-Calculate:
+Calculate: **Revenue by Category**
+
+> `Category Revenue / Total Revenue × 100`
 
 ```text
 Revenue by Category=
 Category Revenue
 ──────────────── × 100
 Total Revenue
-
-**Revenue by Category**
-
-```text
-Category Revenue / Total Revenue × 100
 
 **Why management should care:**
 A small number of categories may be responsible for a large proportion of revenue.
