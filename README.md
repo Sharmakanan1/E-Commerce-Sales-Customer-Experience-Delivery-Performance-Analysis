@@ -230,3 +230,79 @@ One existing analysis of this dataset identifies November 2017 as the strongest 
 
 **Recommendation:**
 Use historical seasonal patterns to plan inventory, seller capacity and marketing campaigns.
+
+### Insight 5 — Payment behavior
+
+The dataset contains payment method and installment information.
+
+Analyze: 
+`Credit Card
+Boleto
+Voucher
+Debit Card`
+The existing dataset analysis indicates that credit card is the dominant payment method.
+
+**Business impact:**
+Understanding payment preferences can help optimize checkout and promotions.
+
+**Recommendation:**
+Maintain strong support for the dominant payment method while testing incentives for alternative methods where commercially appropriate.
+
+## Q5 — Surprising Result
+This is VERY important.
+I would use:
+
+**"Delivery performance has a much stronger relationship with customer satisfaction than expected."**
+##### 1. Initial expectation:
+I initially expected product category and price to be the major factors affecting customer satisfaction.
+
+##### 2. Actual result:
+The analysis showed a substantial difference in review scores between on-time and late deliveries
+Approximately:
+
+**On-time:** 4.29
+**Late:** 2.57
+##### 3. Why might this happen?
+
+Customers may tolerate differences in product price or category, but a delayed delivery directly affects their expected customer experience.
+
+##### 4. Additional analysis
+
+Compare:
+
+- Review score × delivery status
+- Review score × delivery days
+- Review score × state
+- Review score × product category
+##### 5. Conclusion
+
+>Delivery reliability appears to be an important driver of customer satisfaction. However, the analysis demonstrates association rather than proving that delivery delay is the sole cause of low ratings.
+
+That last sentence is very important because it demonstrates analytical maturity.
+## Q6 — Data Quality & Limitations
+### Issue 1 — Missing values
+  Some fields contain missing information.
+  
+**Impact:**
+  Could affect calculations involving delivery time or reviews.
+
+**Handling:**
+Investigated missingness and avoided treating all missing values as zero.
+
+### Issue 2 — Historical dataset
+>The data covers approximately 2016–2018.
+
+**Impact:**
+Customer behavior and e-commerce conditions may have changed since then.
+
+**Handling:**
+Treat findings as historical rather than current-market estimates.
+
+### Issue 3 — Anonymized data
+>Olist states that the commercial data is anonymized.
+
+**Impact:**
+We cannot identify individual real-world customers or businesses.
+
+**Handling:**
+Use the available IDs and aggregate analysis.
