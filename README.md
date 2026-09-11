@@ -135,7 +135,7 @@ or, depending on your chosen business definition:
 ##### Customer Type
 
 >`1 order → One-time Customer
->>1 order → Repeat Customer`
+>1 order → Repeat Customer`
 
 ## Q — Three Major Cleaning Decisions
 #### Decision 1 — Date conversion:
@@ -170,7 +170,7 @@ Revenue is concentrated among a relatively small number of product categories.
 
 Calculate:
 **Revenue by Category**
-> Revenue by Category=`Category Revenue / Total Revenue × 100`
+ `Revenue by Category=Category Revenue / Total Revenue × 100`
 
 **Why management should care:**
 A small number of categories may be responsible for a large proportion of revenue.
@@ -189,3 +189,8 @@ Customer and sales activity is strongly concentrated in specific Brazilian state
 Existing analysis of the dataset confirms strong customer/seller concentration in São Paulo.
 
 #### Evidence:
+Create:
+`Revenue by State
+Orders by State
+Customers by State`
+
