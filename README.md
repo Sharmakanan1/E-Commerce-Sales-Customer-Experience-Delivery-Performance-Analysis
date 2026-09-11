@@ -33,16 +33,16 @@ This multi-table structure is particularly useful for demonstrating data joining
 
 ### 6. Business opportunities/problems
 The dataset can help investigate:
-Sales and revenue trends
-Product/category performance
-Customer purchasing behavior
-Regional performance
-Delivery delays
-Customer satisfaction
-Payment behavior
-Seller performance
-Repeat-customer behavior
-Opportunities to improve customer experience
+**Sales and revenue trends**
+**Product/category performance**
+**Customer purchasing behavior**
+**Regional performance**
+**Delivery delays**
+**Customer satisfaction**
+**Payment behavior**
+**Seller performance**
+**Repeat-customer behavior**
+**Opportunities to improve customer experience**
 
 ## Q2 — Business Problem
 ## A. How can an e-commerce company improve revenue and customer satisfaction by understanding product performance, customer behavior and delivery performance?
@@ -115,5 +115,23 @@ Convert:
 Create:
 ##### Revenue
 **Revenue = price**
-
 or, depending on your chosen business definition:
+**Order Value = price + freight_value**
+##### Delivery Days
+
+**Delivery Days = Delivered Date - Purchase Date**
+
+##### Expected Delivery Difference
+
+**Delivery Variance = Actual Delivery Date - Estimated Delivery Date**
+
+##### Late Delivery
+
+**IF Delivery Variance > 0
+THEN "Late"
+ELSE "On Time"**
+
+##### Customer Type
+
+**1 order → One-time Customer**
+**>1 order → Repeat Customer** 
