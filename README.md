@@ -175,7 +175,11 @@ Revenue by Category=
 Category Revenue
 ──────────────── × 100
 Total Revenue
-` ``` `
+
+**Revenue by Category**
+
+```text
+Category Revenue / Total Revenue × 100
 
 **Why management should care:**
 A small number of categories may be responsible for a large proportion of revenue.
