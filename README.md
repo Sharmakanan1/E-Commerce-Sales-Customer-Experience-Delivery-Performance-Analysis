@@ -170,12 +170,22 @@ Revenue is concentrated among a relatively small number of product categories.
 
 Calculate:
 **Revenue by Category**
-> `Category Revenue / Total Revenue × 100`
+> Revenue by Category=`Category Revenue / Total Revenue × 100`
 
 **Why management should care:**
 A small number of categories may be responsible for a large proportion of revenue.
+
 **Business impact:**
 Better inventory and marketing allocation.
+
 **Recommendation:**
 Prioritize high-performing categories while investigating why lower-performing categories underperform.
 
+### Insight 2 — Regional concentration
+
+#### Insight:
+
+Customer and sales activity is strongly concentrated in specific Brazilian states, particularly São Paulo.
+Existing analysis of the dataset confirms strong customer/seller concentration in São Paulo.
+
+#### Evidence:
