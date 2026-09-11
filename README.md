@@ -374,7 +374,9 @@ The assessment specifically asks you to prioritize recommendations according to 
 I'd make the dashboard look something like this:
 
 **TOP KPI CARDS:**
+```text
 ┌──────────────┬──────────────┬──────────────┬──────────────┐
 │ Total Orders │ Total Revenue│ Avg Order    │ Avg Review   │
 │              │              │ Value        │ Score        │
 └──────────────┴──────────────┴──────────────┴──────────────┘
+```
