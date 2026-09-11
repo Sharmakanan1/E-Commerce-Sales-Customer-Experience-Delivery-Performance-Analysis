@@ -113,19 +113,20 @@ Convert:
 #### 5. Calculated fields
 
 Create:
-##### Revenue
+##### Revenue:
 **Revenue = price**
-or, depending on your chosen business definition:
-**Order Value = price + freight_value**
-##### Delivery Days
 
+or, depending on your chosen business definition:
+
+**Order Value = price + freight_value**
+##### Delivery Days:
 **Delivery Days = Delivered Date - Purchase Date**
 
-##### Expected Delivery Difference
+##### Expected Delivery Difference:
 
 **Delivery Variance = Actual Delivery Date - Estimated Delivery Date**
 
-##### Late Delivery
+##### Late Delivery:
 
 **IF Delivery Variance > 0
 THEN "Late"
