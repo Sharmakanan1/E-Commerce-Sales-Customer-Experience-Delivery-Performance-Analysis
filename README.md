@@ -128,11 +128,37 @@ or, depending on your chosen business definition:
 
 ##### Late Delivery:
 
-**IF Delivery Variance > 0
-THEN "Late"
-ELSE "On Time"**
+**IF Delivery Variance > 0**
+**THEN "Late"**
+**ELSE "On Time"**
 
 ##### Customer Type
 
 **1 order → One-time Customer**
 **>1 order → Repeat Customer** 
+
+## Q — Three Major Cleaning Decisions
+#### Decision 1 — Date conversion
+
+
+**Joined:** `Orders` + `Customers` + `Order Items` + `Products` + `Payments` + `Reviews`Change: Converted timestamp columns into datetime format.
+
+Why: Date calculations cannot be reliably performed on strings.
+
+If ignored: Delivery duration and monthly trends could be incorrect.
+
+#### Decision 2 — Missing values
+
+Change: Investigated missing values before deciding whether to remove, retain or transform them.
+
+Why: Some missing values represent orders that had not reached a particular stage.
+
+If ignored: Removing them blindly could reduce the dataset and bias the analysis.
+
+#### Decision 3 — Joining datasets
+
+Change: Joined orders, customers, products, order items, payments and reviews using their appropriate IDs.
+
+Why: No individual table provides the complete business picture.
+
+If ignored: We could analyze sales but wouldn't be able to connect sales with customer experience or delivery performance.
