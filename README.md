@@ -110,6 +110,10 @@ Convert:
 - date formats
 - missing-value representation
 - categorical labels
-##### 5. Calculated fields
+#### 5. Calculated fields
 
 Create:
+##### Revenue
+**Revenue = price**
+
+or, depending on your chosen business definition:
