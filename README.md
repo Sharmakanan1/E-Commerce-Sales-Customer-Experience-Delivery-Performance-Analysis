@@ -382,47 +382,55 @@ I'd make the dashboard look something like this:
 ```
 ## Q7 — Management Recommendations
 
-┌─────────────────────────────────────────────────────────────────────┐
-│       E-COMMERCE SALES & CUSTOMER EXPERIENCE DASHBOARD              │
-│       Olist Brazilian E-Commerce Analysis                           │
-├──────────────┬──────────────┬──────────────┬────────────────────────┤
-│ TOTAL ORDERS │ TOTAL REVENUE│ AVG ORDER    │ AVG REVIEW SCORE       │
-│    99,441    │     $$$      │    $$$       │       ⭐ 4.xx          │
-└──────────────┴──────────────┴──────────────┴────────────────────────┘
+**📈 1. Monthly Revenue Trend**
+## 📊 Q8 — Analysis Graphs
 
-┌─────────────────────────────────┬───────────────────────────────────┐
-│                                 │                                   │
-│      📈 MONTHLY REVENUE         │     📊 REVENUE BY CATEGORY        │
-│                                 │                                   │
-│     Revenue                     │     Health & Beauty █████████     │
-│        ▲                        │     Watches & Gifts ███████       │
-│        │    ╭──╮                │     Bed Bath Table ██████          │
-│        │ ╭──╯  ╰──╮             │     Sports & Leisure █████         │
-│        └────────────────► Month  │     Computers ████                │
-│                                 │                                   │
-└─────────────────────────────────┴───────────────────────────────────┘
+### 1. Monthly Revenue Trend
 
-┌─────────────────────────────────┬───────────────────────────────────┐
-│                                 │                                   │
-│     🌎 REVENUE BY STATE         │  🚚 DELIVERY VS REVIEW SCORE      │
-│                                 │                                   │
-│  SP █████████████               │  On Time       █████████  4.29    │
-│  RJ ███████                     │  Late          █████       2.57    │
-│  MG █████                       │  Not Delivered ███         1.76    │
-│  RS ████                        │                                   │
-│                                 │                                   │
-└─────────────────────────────────┴───────────────────────────────────┘
+```mermaid
+xychart-beta
+    title "Monthly Revenue Trend"
+    x-axis ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    y-axis "Revenue" 0 --> 1200000
+    line [850000, 780000, 920000, 950000, 1000000, 980000, 1050000, 1010000, 970000, 1100000, 1180000, 1120000]
+```
 
-┌─────────────────────────────────────────────────────────────────────┐
-│                    💳 PAYMENT METHOD DISTRIBUTION                   │
-│                                                                     │
-│       Credit Card █████████████████████████                        │
-│       Boleto      ███████                                           │
-│       Voucher     ███                                               │
-│       Debit Card  ██                                                │
-└─────────────────────────────────────────────────────────────────────┘
+### 2. Revenue by Product Category
 
-        FILTERS
-┌──────────┬──────────────┬─────────────┬───────────────┬────────────┐
-│   Date   │ Product Cat. │    State    │ Order Status  │ Delivery   │
-└──────────┴──────────────┴─────────────┴───────────────┴────────────┘
+```mermaid
+xychart-beta
+    title "Revenue by Product Category"
+    x-axis ["Health", "Watches", "Bed Bath", "Sports", "Computers"]
+    y-axis "Revenue" 0 --> 100
+    bar [90, 75, 70, 60, 55]
+```
+
+### 3. Delivery Performance vs Review Score
+
+```mermaid
+xychart-beta
+    title "Delivery Performance vs Review Score"
+    x-axis ["On Time", "Late", "Not Delivered"]
+    y-axis "Average Review Score" 0 --> 5
+    bar [4.29, 2.57, 1.76]
+```
+
+### 4. Revenue by State
+
+```mermaid
+xychart-beta
+    title "Revenue by State"
+    x-axis ["SP", "RJ", "MG", "RS", "PR"]
+    y-axis "Revenue" 0 --> 100
+    bar [100, 70, 55, 45, 40]
+```
+
+### 5. Payment Method Distribution
+
+```mermaid
+pie title Payment Method Distribution
+    "Credit Card" : 75
+    "Boleto" : 20
+    "Debit Card" : 3
+    "Voucher" : 2
+```
