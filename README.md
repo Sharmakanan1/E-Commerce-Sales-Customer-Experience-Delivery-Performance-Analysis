@@ -432,6 +432,9 @@ pie title Payment Method Distribution
 ```
 ## Q9 — Slide Presentation
 
+[📄 View Presentation](presentation/Improving-E-Commerce-Revenue-and-Customer-Experience.pdf)
+
+
 ## Q10 — How I Used AI
 The assessment specifically allows AI and asks you to document how you used it.
 
