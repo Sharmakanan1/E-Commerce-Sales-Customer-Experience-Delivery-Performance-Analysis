@@ -44,5 +44,36 @@ Seller performance
 Repeat-customer behavior
 Opportunities to improve customer experience
 
+### Q2 — Business Problem
+## A. Business Problem
 
+# How can an e-commerce company improve revenue and customer satisfaction by understanding product performance, customer behavior and delivery performance?
+
+The analysis will focus on identifying areas where management can improve sales while reducing operational problems such as late deliveries and poor customer experiences.
+
+## B. Five Questions
+# Question 1 Which product categories generate the highest sales and revenue?
+# Question 2 Which customer regions contribute the most revenue and orders?
+# Question 3 How does delivery performance affect customer review scores?
+# Question 4 What are the major sales trends over time?
+# Question 5 Which customer/product/seller segments represent the greatest opportunity for improvement?
+
+Hypotheses
+H1
+
+Late deliveries are associated with lower customer satisfaction.
+
+We will compare review scores between on-time and late deliveries.
+
+This is particularly promising because existing analysis of this dataset reports average review scores of approximately 4.29 for on-time deliveries and 2.57 for late deliveries.
+
+H2
+
+Sales are concentrated among a relatively small number of product categories and geographic regions.
+
+We will test this using revenue/order contribution by category and state.
+
+H3 — optional
+
+Repeat customers generate higher customer value than one-time customers
 
