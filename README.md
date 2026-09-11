@@ -33,6 +33,7 @@ This multi-table structure is particularly useful for demonstrating data joining
 
 ### 6. Business opportunities/problems
 The dataset can help investigate:
+
 **Sales and revenue trends**
 **Product/category performance**
 **Customer purchasing behavior**
