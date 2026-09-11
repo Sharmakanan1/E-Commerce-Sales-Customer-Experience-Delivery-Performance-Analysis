@@ -93,13 +93,23 @@ Duplicate records were checked using appropriate identifiers such as order ID, c
 
 #### 3. Data types
 Convert:
+| Column | Data Type |
+|--------|-----------|
+| `order_purchase_timestamp` | `datetime` |
+| `order_delivered_customer_date` | `datetime` |
+| `order_estimated_delivery_date` | `datetime` |
+| `price` | `numeric` |
+| `freight_value` | `numeric` |
+| `payment_value` | `numeric` |
+| `review_score` | `integer` |
+#### 4. Standardization
 
-### 🔧 Data Type Standardization
+##### Standardize:
 
-To ensure accurate analysis and calculations, the following columns were converted to appropriate data types:
+- category names
+- date formats
+- missing-value representation
+- categorical labels
+##### 5. Calculated fields
 
-* 🕒 **Date & Time:** `order_purchase_timestamp`, `order_delivered_customer_date`, `order_estimated_delivery_date` → `datetime`
-* 💰 **Numerical Values:** `price`, `freight_value`, `payment_value` → `numeric`
-* ⭐ **Review Rating:** `review_score` → `integer`
-
-> ✅ Proper data types help prevent calculation errors and make time-based, financial, and rating analysis more reliable.
+Create:
