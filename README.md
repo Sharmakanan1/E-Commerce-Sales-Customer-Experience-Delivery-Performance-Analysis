@@ -82,3 +82,24 @@ flowchart LR
 ```
 The dataset's structure supports exactly this kind of relational analysis.
 
+### Data-cleaning steps
+#### 1. Missing values
+
+ Missing values were identified in several date, product and categorical fields. Date fields were converted to appropriate datetime formats, while missing categorical values were retained where their absence itself represented information. Records were not blindly deleted because doing so could introduce selection bias.
+
+#### 2. Duplicate records
+
+Duplicate records were checked using appropriate identifiers such as order ID, customer ID and product ID. Duplicate rows were removed where they represented genuine duplicate records, while legitimate multiple order items were retained.
+
+#### 3. Data types
+Convert:
+
+### 🔧 Data Type Standardization
+
+To ensure accurate analysis and calculations, the following columns were converted to appropriate data types:
+
+* 🕒 **Date & Time:** `order_purchase_timestamp`, `order_delivered_customer_date`, `order_estimated_delivery_date` → `datetime`
+* 💰 **Numerical Values:** `price`, `freight_value`, `payment_value` → `numeric`
+* ⭐ **Review Rating:** `review_score` → `integer`
+
+> ✅ Proper data types help prevent calculation errors and make time-based, financial, and rating analysis more reliable.
