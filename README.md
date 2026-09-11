@@ -138,27 +138,41 @@ or, depending on your chosen business definition:
 **>1 order → Repeat Customer** 
 
 ## Q — Three Major Cleaning Decisions
-#### Decision 1 — Date conversion
+#### Decision 1 — Date conversion:
 
+**Change:** Converted timestamp columns into datetime format.
+**Why:** Date calculations cannot be reliably performed on strings.
+**If ignored:** Delivery duration and monthly trends could be incorrect.
 
-**Joined:** `Orders` + `Customers` + `Order Items` + `Products` + `Payments` + `Reviews`Change: Converted timestamp columns into datetime format.
+#### Decision 2 — Missing values:
 
-Why: Date calculations cannot be reliably performed on strings.
+**Change:** Investigated missing values before deciding whether to remove, retain or transform them.
+**Why:** Some missing values represent order that had not reached a particular stage.
+**If ignored:** Removing them blindly could reduce the dataset and bias the analysis.
 
-If ignored: Delivery duration and monthly trends could be incorrect.
+#### Decision 3 — Joining datasets:
 
-#### Decision 2 — Missing values
+**Change:** Joined orders, customers, products, order items, payments and reviews using their appropriate IDs.
+**Why:** No individual table provides the complete business picture.
+**If ignored:** We could analyze sales but wouldn't be able to connect sales with customer experience or delivery performance.
 
-Change: Investigated missing values before deciding whether to remove, retain or transform them.
+## Q4 — Business Insights
+This is where you should make your project really strong.
+The assessment requires**at least 5 meaningful insights.**
 
-Why: Some missing values represent orders that had not reached a particular stage.
+### Insight 1 — Revenue concentration
 
-If ignored: Removing them blindly could reduce the dataset and bias the analysis.
+#### Insight:
 
-#### Decision 3 — Joining datasets
+Revenue is concentrated among a relatively small number of product categories.
 
-Change: Joined orders, customers, products, order items, payments and reviews using their appropriate IDs.
+#### Evidence:
 
-Why: No individual table provides the complete business picture.
+Calculate:
 
-If ignored: We could analyze sales but wouldn't be able to connect sales with customer experience or delivery performance.
+```text
+Revenue by Category=
+────────────────────────────────
+Category Revenue
+──────────────── × 100
+Total Revenue
