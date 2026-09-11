@@ -44,8 +44,8 @@ Seller performance
 Repeat-customer behavior
 Opportunities to improve customer experience
 
-# Q2 — Business Problem
-## A. Business Problem :How can an e-commerce company improve revenue and customer satisfaction by understanding product performance, customer behavior and delivery performance?
+## Q2 — Business Problem
+## A. How can an e-commerce company improve revenue and customer satisfaction by understanding product performance, customer behavior and delivery performance?
 The analysis will focus on identifying areas where management can improve sales while reducing operational problems such as late deliveries and poor customer experiences.
 
 ## B. Five Questions
@@ -56,12 +56,29 @@ The analysis will focus on identifying areas where management can improve sales 
 ### Question 5 Which customer/product/seller segments represent the greatest opportunity for improvement?
 
 ## Hypotheses
-### H1
--Late deliveries are associated with lower customer satisfaction.
--We will compare review scores between on-time and late deliveries.
--This is particularly promising because existing analysis of this dataset reports average review scores of approximately 4.29 for on-time deliveries and 2.57 for late deliveries.
+### H1: Late deliveries are associated with lower customer satisfaction.
+ We will compare review scores between on-time and late deliveries. 
+ This is particularly promising because existing analysis of this dataset reports average review scores of approximately 4.29 for on-time deliveries and 2.57 for late deliveries.
 
-### H2
--Sales are concentrated among a relatively small number of product categories and geographic regions.
--We will test this using revenue/order contribution by category and state.
+### H2: Sales are concentrated among a relatively small number of product categories and geographic regions.
+We will test this using revenue/order contribution by category and state.
+
+## Q3 — Data Processing
+Use Python + Pandas + NumPy + Matplotlib/Seaborn.
+The assessment specifically allows this approach.
+### Tables to combine
+The important tables are:
+## Database Schema
+
+```mermaid
+flowchart LR
+    Customers --> Orders
+    Orders --> OrderItems["Order Items"]
+    OrderItems --> Products
+    OrderItems --> Sellers
+    Orders --> Payments
+    Orders --> Reviews
+    Products --> Translation["Category Translation"]
+```
+The dataset's structure supports exactly this kind of relational analysis.
 
