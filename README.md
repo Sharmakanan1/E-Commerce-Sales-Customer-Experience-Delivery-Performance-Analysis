@@ -222,10 +222,10 @@ Prioritize logistics monitoring for orders at high risk of delay and investigate
 
 Analyze monthly:
 
-`Month
-Orders
-Revenue
-Average Order Value`
+`Month`
+`Orders`
+`Revenue`
+`Average Order Value`
 
 One existing analysis of this dataset identifies November 2017 as the strongest month by revenue, at approximately 1.18M total revenue under its revenue definition.
 
@@ -237,10 +237,10 @@ Use historical seasonal patterns to plan inventory, seller capacity and marketin
 The dataset contains payment method and installment information.
 
 Analyze: 
-`Credit Card
-Boleto
-Voucher
-Debit Card`
+`Credit Card`
+`Boleto`
+`Voucher`
+`Debit Card`
 The existing dataset analysis indicates that credit card is the dominant payment method.
 
 **Business impact:**
@@ -307,3 +307,74 @@ We cannot identify individual real-world customers or businesses.
 
 **Handling:**
 Use the available IDs and aggregate analysis.
+
+### Two limitations
+**Limitation 1:**
+>The dataset represents one marketplace and therefore may not represent the entire Brazilian e-commerce market.
+
+**Limitation 2:**
+>The dataset is historical, so current consumer behavior may differ from the observed patterns.
+
+## Q7 — Recommendations
+
+### Recommendation 1 — Improve delivery performance
+
+**What:**
+Identify sellers and logistics routes with high late-delivery rates.
+
+**Supported by:**
+Strong relationship between delivery performance and review scores.
+
+**Who acts:**
+Operations + Logistics teams.
+
+**Potential outcome:**
+Higher customer satisfaction and fewer complaints.
+
+**Measure:**
+`Late Delivery Rate`
+`Average Review Score`
+`Customer Complaint Rate`
+
+### Recommendation 2 — Focus resources on high-performing categories
+
+**What:**
+Identify categories generating the largest revenue contribution.
+
+**Who acts:**
+Sales + Marketing + Category Management.
+
+**Potential outcome:**
+Higher revenue and better marketing ROI.
+
+**Measure:**
+`Category Revenue`
+`Category Growth`
+`Revenue Share`
+
+### Recommendation 3 — Expand high-potential regions
+
+**What:**
+Identify regions with relatively low sales but strong customer/seller potential.
+
+**Who acts:**
+Marketing + Business Development.
+
+**Potential outcome:**
+Geographic expansion and additional revenue.
+
+**Measure:**
+`Orders by Region`
+`Revenue by Region`
+`Customer Growth`
+`Revenue Growth %`
+The assessment specifically asks you to prioritize recommendations according to business impact and feasibility, so this ranking works well.
+
+## Q8 — Looker Studio Dashboard
+I'd make the dashboard look something like this:
+
+**TOP KPI CARDS:**
+┌──────────────┬──────────────┬──────────────┬──────────────┐
+│ Total Orders │ Total Revenue│ Avg Order    │ Avg Review   │
+│              │              │ Value        │ Score        │
+└──────────────┴──────────────┴──────────────┴──────────────┘
