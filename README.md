@@ -114,7 +114,7 @@ Convert:
 
 Create:
 ##### Revenue:
-> Revenue = price
+>` Revenue = price`
 
 or, depending on your chosen business definition:
 
