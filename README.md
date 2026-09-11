@@ -114,7 +114,7 @@ Convert:
 
 Create:
 ##### Revenue:
-**Revenue = price**
+> Revenue = price
 
 or, depending on your chosen business definition:
 
@@ -168,23 +168,14 @@ Revenue is concentrated among a relatively small number of product categories.
 
 #### Evidence:
 
-Calculate: **Revenue by Category**
-
+Calculate:
+**Revenue by Category**
 > `Category Revenue / Total Revenue × 100`
-
-```text
-Revenue by Category=
-Category Revenue
-──────────────── × 100
-Total Revenue
 
 **Why management should care:**
 A small number of categories may be responsible for a large proportion of revenue.
-
 **Business impact:**
-
 Better inventory and marketing allocation.
-
 **Recommendation:**
-
 Prioritize high-performing categories while investigating why lower-performing categories underperform.
+
