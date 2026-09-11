@@ -172,7 +172,18 @@ Calculate:
 
 ```text
 Revenue by Category=
-────────────────────────────────
 Category Revenue
 ──────────────── × 100
 Total Revenue
+` ``` `
+
+**Why management should care:**
+A small number of categories may be responsible for a large proportion of revenue.
+
+**Business impact:**
+
+Better inventory and marketing allocation.
+
+**Recommendation:**
+
+Prioritize high-performing categories while investigating why lower-performing categories underperform.
